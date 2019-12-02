@@ -27,6 +27,7 @@ public class ServiceGenerator {
 
     private ServiceGenerator() {}
 
+
     public static <Service> Service createService(Class<Service> serviceClass) {
         if (!httpClient.interceptors().contains(logging)) {
             httpClient.addInterceptor(logging);
